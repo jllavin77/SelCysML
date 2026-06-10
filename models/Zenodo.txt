@@ -1,0 +1,3 @@
+Download model and BLASTdb files here:
+
+https://zenodo.org/uploads/20625234
