@@ -64,3 +64,7 @@ shiny::runApp()
 
 **Ensure BLAST+ is installed and accessible in your system's PATH** to enable the functional validation module.
 
+**Download model and BLASTdb files here:**
+
+``` https://zenodo.org/uploads/20625234 ```
+
