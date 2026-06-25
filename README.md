@@ -1,4 +1,4 @@
-![Graphical Abstract](www/SelCys_banner.png)
+![Graphical Abstract](www/SelCysML.png)
 
 # *SelCysML:* A hybrid ML-BLAST pipeline for the automated identification and functional annotation of selenoproteins.
 
