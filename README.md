@@ -43,6 +43,7 @@ install.packages(c("xgboost", "ranger", "kernlab", "kknn"))
 
 Make sure that BLAST database and executable are in the right path, modify accordingly to your BLAST installation.
 
+BSEP = "/Path_to_database/BLASTdb/selenoprots_BSepDB"
 BLAST_DB <- "/Path_to_database/BLASTdb/uniprot_db" 
 BLAST_PATH <- "/Path_to_BLAST_executable/ncbi-blast-2.17.0+/bin/blastp.exe"
 ```
