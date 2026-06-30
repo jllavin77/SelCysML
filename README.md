@@ -28,18 +28,16 @@ SelCysML requires R (version 4.0 or higher) and several packages for machine lea
 
 ```R
 # 1. Install CRAN dependencies
-dependencies_cran <- c("shiny", "shinythemes", "tidymodels", "themis", "tidyverse", 
-                       "Matrix", "svglite", "DT", "Peptides", "workflowsets", 
-                       "rsample", "yardstick")
+dependencies_cran <- c("shiny", "shinythemes", "tidymodels", "tidyverse", "themis", "Matrix",
+                        "xgboost", "ranger", "kernlab", "kknn", "svglite", "DT", 
+                        "Peptides", "workflowsets", "plotly", "htmlwidgets", "processx")
 
-install.packages(dependencies_cran, dependencies = TRUE)
+# Instalación automática (si no están ya instalados)
+install.packages(deps[!deps %in% installed.packages()[,"Package"]])
 
 # 2. Install Bioconductor dependencies (for sequence analysis)
 if (!require("BiocManager", quietly = TRUE)) install.packages("BiocManager")
 BiocManager::install(c("protr", "Biostrings"))
-
-# 3. Install specific engine dependencies (optional, if missing)
-install.packages(c("xgboost", "ranger", "kernlab", "kknn"))
 
 Make sure that BLAST database and executable are in the right path, modify accordingly to your BLAST installation.
 
